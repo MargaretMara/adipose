@@ -1,0 +1,19 @@
+Program urav;
+var a,b,c,x1,x2,d: real;
+begin
+writeln('введите число 1');
+readln(a);
+writeln('введите число 2');
+readln(b);
+writeln('введите число 3');
+readln(c);
+d:=sqr(b)-4*a*c;
+if d<0 then
+writeln('нет корней')
+else
+begin
+x1:=(-b+sqrt(d))/(2*a);
+x2:=(-b-sqrt(d))/(2*a);
+writeln('x1=',x1);
+writeln('x2=',x2);
+end.
